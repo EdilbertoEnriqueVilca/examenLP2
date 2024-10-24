@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Registrar Paciente</title>
+    
+</head>
+<body>
+
+	<table>
+		<th th:each="p: ${ltsPacientes}">
+			<tr>
+				<td th:text="${p.codpac}"></td>
+				<td th:text="${p.nombrep}"></td>
+			</tr>
+		</th>
+	</table>
+	
+	
+</body>
+</html>
